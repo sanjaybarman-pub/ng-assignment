@@ -1,19 +1,33 @@
 <div class="timer-container">
-    <div>
-        <mat-form-field appearance="legacy">
-            <mat-label>Enter Timer Limit</mat-label>
-            <input matInput [formControl]="timerControl" placeholder="Enter Limit" type="number" (keydown.enter)="onStartOrPause()">
-            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
-            <mat-hint>Ex: 2000</mat-hint>
-        </mat-form-field>
-        <div class="actions">
-        <button mat-raised-button color="primary" (click)="onStartOrPause()">Start / Pause</button>
-        <button mat-raised-button color="accent" (click)="onReset()">Reset</button>
-        </div>
+  <div>
+    <mat-form-field appearance="legacy">
+      <mat-label>Enter Timer Limit</mat-label>
+      <input
+        matInput
+        [formControl]="timerControl"
+        placeholder="Enter Limit"
+        type="number"
+        (keydown.enter)="onStartOrPause()"
+      />
+      <mat-hint>Ex: 2000</mat-hint>
+    </mat-form-field>
+    <div class="actions">
+      <button
+        mat-raised-button
+        id="start-pause"
+        color="primary"
+        (click)="onStartOrPause()"
+      >
+        Start / Pause
+      </button>
+      <button mat-raised-button id="reset" color="accent" (click)="onReset()">
+        Reset
+      </button>
     </div>
-    <div>
-        <div *ngFor="let log of timerData">
-            <p *ngIf="!log?.isActive">paused at {{log.limit}}</p>
-        </div>
+  </div>
+  <div>
+    <div *ngFor="let log of timerData">
+      <p *ngIf="!log?.isActive">paused at {{ log.limit }}</p>
     </div>
+  </div>
 </div>
