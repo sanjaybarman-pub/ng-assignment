@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./app/shared/base";
+
+html,
+body {
+  padding: 0;
+  background-color: $bg-color;
+  color: $black-color;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: .2rem;
+  width: 100%;
+}
+body {
+  
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

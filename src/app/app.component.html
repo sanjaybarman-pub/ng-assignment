@@ -1,0 +1,18 @@
+<main class="main-container">
+    <header class="header">
+        <nav class="header-nav">
+            <div class="header-nav-home">Home</div>
+            <a class="header-nav-option" routerLink="/route1" routerLinkActive="header-nav-activelink">BANNER</a>
+            <a class="header-nav-option" routerLink="/route2" routerLinkActive="header-nav-activelink">PRODUCTS</a>
+            <a class="header-nav-option" routerLink="/route3" routerLinkActive="header-nav-activelink">TIMER</a>
+            <a class="header-nav-option" routerLink="/route4" routerLinkActive="header-nav-activelink">TIMER-2</a>
+            <a class="header-nav-option" routerLink="/route5" routerLinkActive="header-nav-activelink">TABLE</a>
+            <a class="header-nav-option" routerLink="/route6" routerLinkActive="header-nav-activelink">DYNAMIC ELEMENT</a>
+            <div class="header-mobile">
+                <mat-icon class="header-mobile-icon">menu</mat-icon>
+            </div>
+        </nav>
+    </header>
+    <mat-divider></mat-divider>
+    <router-outlet></router-outlet>
+</main>

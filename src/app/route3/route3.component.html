@@ -1,0 +1,21 @@
+<section class="container">
+  <h2 class="title">TIMER</h2>
+  <div class="content">
+    <app-display-timer
+      class="content-child"
+      [timerCount]="currentTimerData?.limit"
+    ></app-display-timer>
+    <app-timer-menu
+      class="content-child"
+      (getTimerData)="updateList($event)"
+    ></app-timer-menu>
+    <app-log-actions
+      class="content-child"
+      [actionList]="updatedTimerList"
+    ></app-log-actions>
+    <app-count-actions
+      class="content-child"
+      [actionList]="updatedTimerList"
+    ></app-count-actions>
+  </div>
+</section>

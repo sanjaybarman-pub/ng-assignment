@@ -1,0 +1,16 @@
+.container {
+    font-size: 1.6rem;
+    .title {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+    }
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        &-child {
+            width: 46rem;
+        }
+    }
+}

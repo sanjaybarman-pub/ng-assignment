@@ -1,0 +1,19 @@
+<table *ngIf="tableData?.length" class="table">
+  <tr (click)="onClick($event)">
+    <th
+      *ngFor="let header of headerListMapped"
+      id="{{ header.id }}"
+      class="table-header"
+    >
+      <span id="{{ header.id }}">
+        {{ header.name }}
+        <mat-icon *ngIf="header?.sort !== 'reset'" id="{{ header.id }}" class="table-icon">{{
+          header.sort === "asc" ? "arrow_upward" : "arrow_downward"
+        }}</mat-icon>
+      </span>
+    </th>
+  </tr>
+  <tr *ngFor="let student of tableData">
+    <td *ngFor="let header of headerListMapped">{{ student[header.id] }}</td>
+  </tr>
+</table>

@@ -1,0 +1,37 @@
+@mixin restrictLine($line-clamp) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+  }
+
+.card {
+    // height: 35.2rem;
+  &-img {
+    padding: 0;
+    margin: 0;
+    height: 10rem;
+  }
+  &-header-title {
+    font-size: 1.4rem;
+    @include restrictLine(1);
+  }
+  &-content {
+    @include restrictLine(3);
+    .del {
+      font-weight: 100;
+      font-style: italic;
+    }
+    .discount {
+      color: red;
+      font-style: italic;
+      font-weight: 300;
+    }
+  }
+  .actions {
+    display: flex;
+    justify-content: space-between;
+
+  }
+}

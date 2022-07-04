@@ -1,0 +1,55 @@
+@import 'shared/base';
+
+.main-container {
+    // padding: 0.2rem 1rem;
+    margin: 0;
+    // overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    background-color: $black-color;
+    height: 4rem;
+    font-size: 1.4rem;
+    padding: 1rem;
+    &-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        color: $bg-color;
+        &-option {
+            color: $bg-color;
+            text-decoration: none;
+        }
+        &-activelink {
+            text-decoration: underline;
+            text-decoration-color: rgb(249, 198, 11);
+            text-decoration-thickness: 0.5rem;
+            letter-spacing: 0.4rem;
+        }
+    }
+    &-mobile {
+        color: $bg-color;
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .header {
+        &-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-nav-option {
+            display: none;
+        }
+        &-mobile{
+            display: block;
+        }
+
+    }
+    
+    
+}

@@ -1,0 +1,19 @@
+.container {
+    height: 400px;
+    &-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}

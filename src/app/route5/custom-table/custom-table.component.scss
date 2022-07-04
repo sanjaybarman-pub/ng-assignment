@@ -1,0 +1,18 @@
+
+@import '../../shared/base';
+
+.table {
+    width: 420px;
+    border: 1px solid $primary-color;
+    &-header {
+        cursor: pointer;
+    }
+    td, th {
+        border: 1px solid $secondary-color;
+        overflow: hidden;
+    }
+    &-icon {
+        font-size: small;
+        margin-bottom: -10px;
+    }
+}
