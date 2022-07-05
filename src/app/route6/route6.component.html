@@ -2,9 +2,13 @@
   <div
     *cdkVirtualFor="let item of items; let indx = index"
     class="container-child"
-    (click)="onClick(indx)"
   >
-    <button mat-stroked-button [id]="indx" color="accent">
+    <button
+      mat-stroked-button
+      [id]="indx"
+      color="accent"
+      (click)="onClick(indx)"
+    >
       div:{{ indx + 1 }}
     </button>
   </div>

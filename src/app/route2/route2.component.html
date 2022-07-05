@@ -4,6 +4,7 @@
       name="fontStyle"
       aria-label="Font Style"
       (change)="onChange($event)"
+      id="view-button-group"
     >
       <mat-button-toggle value="grid"
         ><mat-icon>grid_view_alt</mat-icon></mat-button-toggle
@@ -15,9 +16,9 @@
     <mat-form-field appearance="outline" style="font-size: 14px">
       <mat-label>Sort</mat-label>
       <mat-select [formControl]="sortControl">
-         <mat-option *ngFor="let sort of sortingList" [value]="sort.value">
-                {{sort.name}}
-              </mat-option>
+        <mat-option *ngFor="let sort of sortingList" [value]="sort.value">
+          {{ sort.name }}
+        </mat-option>
       </mat-select>
     </mat-form-field>
   </header>
