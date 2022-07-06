@@ -1,0 +1,78 @@
+<testExecutions version="1">
+  <file path="src/app/route6/route6.component.spec.ts">
+    <testCase name="Route6Component #onClick On click second div, should display message for &quot;2nd div" duration="48"/>
+    <testCase name="Route6Component #onClick On click fourth and beyond, message should display with &quot;${id} th div&quot;" duration="8"/>
+    <testCase name="Route6Component #onClick On click firt div, should display message for &quot;1st div" duration="6"/>
+    <testCase name="Route6Component #onClick On click third div, should display message for &quot;3rd div" duration="3"/>
+    <testCase name="Route6Component should create" duration="4"/>
+  </file>
+  <file path="src/app/route4/route4.component.spec.ts">
+    <testCase name="Route4Component should create" duration="8"/>
+  </file>
+  <file path="src/app/route4/timer-menu/timer-menu.component.spec.ts">
+    <testCase name="TimerMenuComponent #actions #start" duration="42"/>
+    <testCase name="TimerMenuComponent #actions #pause" duration="8"/>
+    <testCase name="TimerMenuComponent #actions #reset" duration="7"/>
+    <testCase name="TimerMenuComponent should create" duration="9"/>
+  </file>
+  <file path="src/app/route2/route2.component.spec.ts">
+    <testCase name="Route2Component should update #currentView" duration="34"/>
+    <testCase name="Route2Component #productList If highToLow, should sort in descending order" duration="14"/>
+    <testCase name="Route2Component #productList If recommended, should sort with Ids" duration="16"/>
+    <testCase name="Route2Component #productList If lowToHigh, should sort in ascending order" duration="10"/>
+    <testCase name="Route2Component should create" duration="14"/>
+  </file>
+  <file path="src/app/route4/count-actions/count-actions.component.spec.ts">
+    <testCase name="CountActionsComponent should create" duration="7"/>
+  </file>
+  <file path="src/app/route4/log-actions/log-actions.component.spec.ts">
+    <testCase name="LogActionsComponent should create" duration="11"/>
+  </file>
+  <file path="src/app/route5/custom-table/custom-table.component.spec.ts">
+    <testCase name="CustomTableComponent should create" duration="21"/>
+    <testCase name="CustomTableComponent #onClick #shortList should triger for &quot;reset&quot; order" duration="3"/>
+    <testCase name="CustomTableComponent #onClick #shortList should triger for &quot;desc&quot; order" duration="3"/>
+    <testCase name="CustomTableComponent #onClick #shortList should triger for &quot;ace&quot; order" duration="6"/>
+    <testCase name="CustomTableComponent #sortList If previous sorting order #reset/#asc, should short with descending order" duration="5"/>
+    <testCase name="CustomTableComponent #sortList If previous sorting order #desc, should short with Ascending order" duration="10"/>
+  </file>
+  <file path="src/app/route4/display-timer/display-timer.component.spec.ts">
+    <testCase name="DisplayTimerComponent should create" duration="5"/>
+  </file>
+  <file path="src/app/route4/timer-menu/timer-menu.component.spec.ts">
+    <testCase name="TimerMenuComponent #actions #reset" duration="21"/>
+    <testCase name="TimerMenuComponent #actions #start" duration="7"/>
+    <testCase name="TimerMenuComponent #actions #pause" duration="7"/>
+    <testCase name="TimerMenuComponent should create" duration="6"/>
+  </file>
+  <file path="src/app/route4/timer.service.spec.ts">
+    <testCase name="TimerService should be created" duration="9"/>
+  </file>
+  <file path="src/app/route4/display-timer/display-timer.component.spec.ts">
+    <testCase name="DisplayTimerComponent should create" duration="10"/>
+  </file>
+  <file path="src/app/route4/count-actions/count-actions.component.spec.ts">
+    <testCase name="CountActionsComponent should create" duration="8"/>
+  </file>
+  <file path="src/app/route3/route3.component.spec.ts">
+    <testCase name="Route3Component should create" duration="30"/>
+  </file>
+  <file path="src/app/route4/log-actions/log-actions.component.spec.ts">
+    <testCase name="LogActionsComponent should create" duration="7"/>
+  </file>
+  <file path="src/app/route5/route5.component.spec.ts">
+    <testCase name="Route5Component should create" duration="13"/>
+  </file>
+  <file path="src/app/shared/data.service.spec.ts">
+    <testCase name="DataService should be created" duration="3"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="19"/>
+  </file>
+  <file path="src/app/route2/route2.component.spec.ts">
+    <testCase name="Route2Component should create" duration="18"/>
+  </file>
+  <file path="src/app/route1/route1.component.spec.ts">
+    <testCase name="Route1Component should create" duration="7"/>
+  </file>
+</testExecutions>

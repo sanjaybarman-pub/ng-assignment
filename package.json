@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --code-coverage",
-    "server": "json-server --watch data/MOCK_DATA.json"
+    "server": "json-server --watch data/MOCK_DATA.json",
+    "sonar": "sonar-scanner"
   },
   "private": true,
   "dependencies": {
@@ -37,6 +38,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "karma-sonarqube-unit-reporter": "^0.0.23",
+    "sonar-scanner": "^3.1.0",
     "typescript": "~4.7.2"
   }
 }

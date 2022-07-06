@@ -4,6 +4,13 @@
 .table {
     width: 420px;
     border: 1px solid $primary-color;
+    caption {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: .4rem;
+        font-weight: 900;
+        color: $primary-color;
+    }
     &-header {
         cursor: pointer;
     }

@@ -1,29 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ITimerData } from './timer.model';
 
 @Component({
   selector: 'app-route4',
   templateUrl: './route4.component.html',
-  styleUrls: ['./route4.component.scss']
+  styleUrls: ['./route4.component.scss'],
 })
-export class Route4Component implements OnInit {
-
+export class Route4Component {
   timerList: ITimerData[] = [];
   currentTimerData: ITimerData;
 
-
-  constructor() { }
-
-  
   updateList(list) {
     this.timerList = list;
-    this.currentTimerData = list[list.length-1];
-
-    // console.log(this.updatedTimerList);
-    
+    this.currentTimerData = list[list.length - 1];
   }
-
-  ngOnInit(): void {
-  }
-
 }
