@@ -115,7 +115,6 @@ describe('CustomTableComponent', () => {
       component.headerListMapped.shift();
       component.headerListMapped.unshift({ id: 'id', name: 'ID', sort: 'asc' });
       const mockFn = spyOn(component, 'sortList');
-      console.log(component.headerListMapped);
       component.onClick(event);
       expect(mockFn).toHaveBeenCalledWith('id', 'desc');
     });

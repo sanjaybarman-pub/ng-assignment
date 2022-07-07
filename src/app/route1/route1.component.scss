@@ -1,38 +1,23 @@
 .container {
-    margin: 2% 10%;
+  margin: 2% 10%;
 }
 .showBorder {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 2rem;
+}
+.floating {
+  font-size: 1.8rem;
+  margin: 0;
+  text-transform: uppercase;
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0, 0.48, 0.91, 0.51);
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 
-
-.floating { 
-    animation-name: floating;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 5px;
-    margin-top: 5px;
-    transform: rotate(-90deg);
-}
-
-/* .slidingHorizontal{
-	display: inline;
-	text-indent: 8px;
-}
-.slidingHorizontal span{
-	animation: leftToRight 12.5s linear infinite 0s;
-	-ms-animation: leftToRight 12.5s linear infinite 0s;
-	-webkit-animation: leftToRight 12.5s linear infinite 0s;
-	color: #00abe9;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-} */
- 
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+  100% {
+    transform: translateX(69%);
+  }
 }

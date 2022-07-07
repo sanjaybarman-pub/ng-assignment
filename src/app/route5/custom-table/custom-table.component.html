@@ -1,4 +1,5 @@
 <table *ngIf="tableData?.length" class="table">
+  <caption>Student details table</caption>
   <tr (click)="onClick($event)">
     <th
       *ngFor="let header of headerListMapped"
